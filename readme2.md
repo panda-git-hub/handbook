@@ -4,5 +4,7 @@
 sequenceDiagram
   autonumber
   Title: ワンタッチオペレーション
-  participant A as Ansible
-  participant B as Target node
+  participant A as Server
+  participant B as NW-main
+  participant B as NW-backup
+
