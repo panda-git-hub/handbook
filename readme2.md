@@ -11,14 +11,15 @@ sequenceDiagram
   participant E as OC
   participant F as FU
   participant G as DM
-  participant H as AT
-  participant I as Human
+  participant H as AT(WF1)
+  participant I as AT(WF2)
+  participant J as Human
 
   A->>A: プロセスダウン
   A->>D: アラート発生
   D->>D: アラーム生成
   D->>E: アラーム表示
-  E->>I: アラーム目視
+  E->>J: アラーム目視
   D->>F: アラーム転送
   F->>G: ルール判定依頼
   G->>F: ルール判定
