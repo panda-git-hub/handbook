@@ -4,10 +4,10 @@
 sequenceDiagram
   autonumber
   Title: 
-  participant A as Server
-  participant B as NW-main
-  participant C as NW-backup
-  participant D as FaultManager
+  participant A as SRV
+  participant B as NW(m)
+  participant C as NW(b)
+  participant D as FM
   participant E as Fuse
   participant F as DM
   participant G as Ansible
