@@ -5,9 +5,9 @@ sequenceDiagram
   autonumber
   Title: わんこの概要
   participant A as 連携システム
-  participant B as Fuse（JAZZ)
-  participant C as DecisionManager<br>（JAZZ)
-  participant D as AnsibleTower<br>（JAZZ)
+  participant B as Fuse
+  participant C as DecisionManager
+  participant D as AnsibleTower
   participant E as 担当者
   participant F as 自動化<br>対象ホスト
 
@@ -29,9 +29,9 @@ sequenceDiagram
   autonumber
   Title: わんこの概要
   participant A as 連携システム
-  participant B as Fuse（JAZZ)
-  participant C as DecisionManager<br>（JAZZ)
-  participant D as AnsibleTower<br>（JAZZ)
+  participant B as Fuse
+  participant C as DecisionManager
+  participant D as AnsibleTower
   participant E as 担当者
   participant F as 自動化<br>対象ホスト
 
