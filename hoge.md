@@ -1,21 +1,17 @@
 ```mermaid
 sequenceDiagram
   autonumber
-  Title: わんこの概要
-  participant A as 連携システム
-  participant B as Fuse
-  participant C as DecisionManager
-  participant D as AnsibleTower
-  participant E as 担当者
-  participant F as 自動化<br>対象ホスト
+  Title: 朝礼用
+  participant A as Voyager<br>（監視システム）
+  participant B as Fuse<br>（オーダー処理）
+  participant C as DecisionManager<br>（ルールエンジン）
+  participant D as AnsibleTower<br>（自動化）
+  participant E as 自動化対象
 
-  A->>B: オーダー発行
-  B->>B: オーダー精査
-  B->>C: オーダー転送
-  C->>C: ルール判定
-  C->>B: 判定結果を送信
-  B->>E: <br>ワンコードを発行<br>（ワンコードには、対象ホスト・該当自動化コード・必要なパラメータをコード化）
-  E->>D: ワンコードを入力
-  D->>F: 自動化を実行
-  D->>E: 結果を表示
+  A->>B: オーダー送信
+  B->>C: ルール判定依頼
+  C->>D: 判定および自動化依頼
+  D->>E: 自動化実行  
+  D->>A: 実行結果送信
+  B->>D: ステータス確認 
 ```
