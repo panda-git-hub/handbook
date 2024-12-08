@@ -1,7 +1,6 @@
 ```mermaid
 sequenceDiagram
   autonumber
-  Title: 朝礼用
   participant A as Voyager<br>（監視システム）
   participant B as Fuse<br>（オーダー処理）
   participant C as DecisionManager<br>（ルールエンジン）
@@ -10,7 +9,9 @@ sequenceDiagram
 
   A->>B: オーダー送信
   B->>C: ルール判定依頼
-  C->>D: 判定および自動化依頼
+  C->>C: ルール判定
+  C->>B: 判定結果の送信
+  B->>D: 自動化依頼
   D->>E: 自動化実行  
   D->>A: 実行結果送信
   B->>D: ステータス確認 
