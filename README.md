@@ -14,3 +14,18 @@ sequenceDiagram
   Note right of A: テキストファイルで保存
   A->>A: レポートシェルを実行
  ```
+
+
+## 設定登録
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant A as 監視ホスト
+  participant B as rsyslog
+  participant C as zabbix<br>agent
+  participant D as zabbix<br>アイテム
+  participant E as zabbix<br>トリガー
+  participant F as zabbix<br>アクション
+  participant G as voyager<br>SS
+```
