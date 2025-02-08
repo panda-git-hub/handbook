@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5a02122a-60ae-4c70-a7cd-1485030e732a)```mermaid
+```mermaid
 sequenceDiagram
   autonumber
   participant A as Voyager<br>（監視システム）
