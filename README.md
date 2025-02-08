@@ -30,4 +30,6 @@ sequenceDiagram
   participant G as voyager<br>SS
   participant H as voyager<br>OC
   A->>B: ログ送信
+  B->>B: ログフォーマットの指定
+  B->>B: ログ保存
 ```
