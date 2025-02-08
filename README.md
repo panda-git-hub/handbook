@@ -27,8 +27,8 @@ sequenceDiagram
   participant D as zabbix<br>アイテム
   participant E as zabbix<br>トリガー
   participant F as zabbix<br>アクション
-  participant G as voyager<br>SS
-  participant H as voyager<br>OC
+  participant G as 監視システム<br>xxxxx
+  participant H as 監視システム<br>xxxxx
   A->>B: ログ送信
   B->>B: ログフォーマットの指定
   B->>B: ログ保存
