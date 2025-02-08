@@ -31,11 +31,10 @@ sequenceDiagram
   participant H as 監視システム<br>xxxxx
   participant I as 監視システム<br>xxxxx
   A->>B: ログ送信
-  note over A,I: 2025/02/10 10:25:30 switch-A Ga1/0/1 Linkdown.
   B->>B: ログフォーマット指定
-  note over A,I: 192.168.0.1 switch-A 2025/02/10 10:25:30 switch-A Ga1/0/1 Linkdown.
   B->>B: ログ保存
   D->>C: 対象ログ指定
+  note over A,I: フィルタ条件: Linkdownを含む
   C->>B: 対象ログ確認
   C->>D: 対象ログ取得
   D->>E: トリガー評価
