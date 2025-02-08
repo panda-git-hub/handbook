@@ -28,4 +28,5 @@ sequenceDiagram
   participant E as zabbix<br>トリガー
   participant F as zabbix<br>アクション
   participant G as voyager<br>SS
+  participant H as voyager<br>OC
 ```
