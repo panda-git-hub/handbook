@@ -1,4 +1,4 @@
-```mermaid
+![image](https://github.com/user-attachments/assets/5a02122a-60ae-4c70-a7cd-1485030e732a)```mermaid
 sequenceDiagram
   autonumber
   participant A as Voyager<br>（監視システム）
@@ -9,7 +9,11 @@ sequenceDiagram
 
   A->>B: オーダー送信
   B->>C: ルール判定依頼
-  C->>D: 判定および自動化依頼
+  rect rgba(255,0,255, 0.2)
+  C->>C: ルール判定
+  C->>B: 判定結果の送信
+  B->>D: 自動化依頼
+  end
   D->>E: 自動化実行  
   D->>A: 実行結果送信
   B->>D: ステータス確認 
