@@ -29,4 +29,5 @@ sequenceDiagram
   participant F as zabbix<br>アクション
   participant G as voyager<br>SS
   participant H as voyager<br>OC
+  A->>B: ログ送信
 ```
