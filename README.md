@@ -27,12 +27,16 @@ sequenceDiagram
   participant D as zabbix<br>アイテム
   participant E as zabbix<br>トリガー
   participant F as zabbix<br>アクション
-  participant G as 監視システム<br>xxxxx
+  participant G as zabbix<br>外部プログラム
   participant H as 監視システム<br>xxxxx
+  participant I as 監視システム<br>xxxxx
   A->>B: ログ送信
   B->>B: ログフォーマットの指定
   B->>B: ログ保存
   D->>C: 対象ログの指定
   C->>B: 対象ログの確認
-  B->>D: 対象ログの取得
+  C->>D: 対象ログの取得
+  D->>D: トリガー条件の評価
+  D->>E: アクションの実行
+  E->>F: 外部プログラムの実行
 ```
