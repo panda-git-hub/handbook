@@ -43,4 +43,5 @@ sequenceDiagram
   G->>H: トラップ連携
   H->>I: アラーム生成
   I->>I: アラーム表示
+  note right of I: "2025/02/10 00:00:00 | serverA | Critical | Lindown"
 ```
