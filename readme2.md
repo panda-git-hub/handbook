@@ -19,8 +19,10 @@ sequenceDiagram
   B->>E: <br>ワンコードを発行<br>（ワンコードには、対象ホスト・該当自動化コード・必要なパラメータをコード化）
   E->>D: ワンコードを入力
   D->>F: 自動化を実行
-  D->>E: 結果を表示　[google](https://google.com)
+  D->>E: 結果を表示　
 ```
+
+[google](https://google.com)
 
 ## 例１：システム監視
 
