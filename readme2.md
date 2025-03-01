@@ -23,6 +23,7 @@ sequenceDiagram
 ```
 
 [google](https://google.com)
+[fuga](#fuga)
 
 ## 例１：システム監視
 
@@ -47,3 +48,5 @@ sequenceDiagram
   D->>F: 自動化を実行
   D->>E: 結果を表示
 ```
+
+## fuga
