@@ -1,13 +1,12 @@
 # おためしシーケンス図
 
-## part00
-全体概要
+## part0:workflow
 
 ```mermaid
 sequenceDiagram
   autonumber
   Title: システムへのユーザ登録の自動化
-  participant A as オペレーター
+  actor A as オペレーター
   participant B as Ansible
   participant C as 踏み台サーバ
   participant D as ServerA
