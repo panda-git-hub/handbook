@@ -16,7 +16,7 @@ sequenceDiagram
 ## ユーザ情報の入力
 ```mermaid
 flowchart TD
-  Aa["start"]
+  Aa((start))
   Ba["ダッシュボードにアクセス<br>(Tower)"]
   Ca["ワークフローの選択<br>(Tower)"]
   Da["ワークフローの実行<br>(Tower)"]
@@ -24,8 +24,10 @@ flowchart TD
   Fa["確認画面<br>(Tower)"]
   Fb["YESをクリック<br>(Tower)"]
   Fc["NOをクリック<br>(Tower)"]
+  Za((end<br>次へ))
+  Zb((end<br>終了))
 
   Aa-->Ba-->Ca-->Da-->Ea-->Fa
   Fa-->Fb
-  Fa-->Fc
+  Fa-->Fc-->Zb
 ```
