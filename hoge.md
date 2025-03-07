@@ -11,5 +11,5 @@ sequenceDiagram
   participant C as 踏み台サーバ
   participant D as ターゲットノード
 
-  A->>B: ユーザ情報の入力
+  A->>B: [ユーザ情報の入力](https://www.yahoo.co.jp)
 ```
