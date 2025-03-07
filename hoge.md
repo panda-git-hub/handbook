@@ -1,8 +1,6 @@
 # おためしシーケンス図
 
-## part0:workflow
-システムへのユーザ登録の自動化
-
+## サマリ
 ```mermaid
 sequenceDiagram
   autonumber
@@ -13,7 +11,21 @@ sequenceDiagram
 
   A->>B: ユーザ情報の入力
   B->>C: ユーザ情報の確認（登録前）
-　
+```
 
+## ユーザ情報の入力
+```mermaid
+flowchart TD
+  Aa["start"]
+  Ba["ダッシュボードにアクセス<br>(Tower)"]
+  Ca["ワークフローの選択<br>(Tower)"]
+  Da["ワークフローの実行<br>(Tower)"]
+  Ea["SURVEYの入力<br>(Tower)"]
+  Fa["確認画面<br>(Tower)"]
+  Fb["YESをクリック<br>(Tower)"]
+  Fc["NOをクリック<br>(Tower)"]
 
+  Aa-->Ba-->Ca-->Da-->Ea-->Fa
+  Fa-->Fb
+  Fa-->Fc
 ```
